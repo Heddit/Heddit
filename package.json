@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Final Team Project - Summer 2018",
   "main": "index.js",
+  "dependencies": {
+    "semantic-ui-react": "^0.82.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "react-scripts build",
-    "heroku-postbuild": "cd client && npm install --only =dev && npm install && npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
