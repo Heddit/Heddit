@@ -1,7 +1,11 @@
-body{
+.text-editor-body{
     background-color: #2d2d2d;
     color: grey;
 }
+
+.text-editor-container{
+    margin: 2% auto;
+  }
 
 .tabs{
     width: 150%;
@@ -10,6 +14,19 @@ body{
 .skin-selector{
     margin: auto;
     padding: 1%;
-    font-size: 200%;
-    color: cadetblue
+}
+
+.logo{
+    width: 50%;
+    height: 100%;
+    margin: -50% 0 0 0;
+}
+
+.tab-style{
+    width: 20%;
+}
+
+.side-nav{
+    background-color: #2d2d2d;
+    height: 100%;
 }

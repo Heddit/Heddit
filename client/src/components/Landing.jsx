@@ -14,20 +14,22 @@ class Landing extends Component {
   }
     render() {
         return (
-            <div>
-            <video id="background-video" loop autoPlay muted>
-                <source src={this.state.videoURL} type="video/mp4" />
-                <source src={this.state.videoURL} type="video/ogg" />
-                Your browser does not support the video tag.
-             </video>
-                <div className="static-modal">
-                    <Modal.Dialog bsStyle='small'>
-                            <a href='/Login'> 
-                                <img className='logo' src={this.state.logoImage} alt='Hiddit Logo'/>
-                            </a>
-                    </Modal.Dialog>
+            <body className='landing-body-page'>
+                <div>
+                <video id="background-video" loop autoPlay muted>
+                    <source src={this.state.videoURL} type="video/mp4" />
+                    <source src={this.state.videoURL} type="video/ogg" />
+                    Your browser does not support the video tag.
+                </video>
+                    <div className="static-modal">
+                        <Modal.Dialog bsStyle='small'>
+                                <a href='/Login'> 
+                                    <img className='landing-logo' src={this.state.logoImage} alt='Hiddit Logo'/>
+                                </a>
+                        </Modal.Dialog>
+                    </div>
                 </div>
-            </div>
+            </body>
         );
     }
 }
