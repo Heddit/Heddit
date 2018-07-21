@@ -6,3 +6,10 @@ body{
 .tabs{
     width: 150%;
 }
+
+.skin-selector{
+    margin: auto;
+    padding: 1%;
+    font-size: 200%;
+    color: cadetblue
+}

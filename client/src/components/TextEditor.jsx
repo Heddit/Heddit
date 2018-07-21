@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Col, Tabs, Tab} from 'react-bootstrap'
+import {Col, Tabs, Tab, Glyphicon} from 'react-bootstrap'
 import './TextEditor.css'
 
 
@@ -24,7 +24,7 @@ class TextEditor extends Component {
                     </Col>
                 </div>
                 <div>
-                    <Col sm={6} md={10}>
+                    <Col sm={6} md={9}>
                     <Tabs defaultActiveKey={2} id="tabs">
                         <Tab eventKey={1} title="Tab 1">
                             Tab 1 content
@@ -36,6 +36,9 @@ class TextEditor extends Component {
                             Tab 3 content
                         </Tab>
                     </Tabs>
+                    </Col>
+                    <Col sm={1} md={1} className="skin-selector">
+                        <Glyphicon glyph='tint' />
                     </Col>
                 </div>
             </div>
