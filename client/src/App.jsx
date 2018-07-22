@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Landing from './components/Landing'
 import Login from './components/Login'
 import TextEditor from './components/TextEditor'
@@ -14,9 +14,13 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route exact path="/Login" component={ Login } />
-          <Route exact path="/TextEditor" component={ TextEditor } />
-          <Route exact path="/" component={ Landing } />
+          <div className="main-body">
+            <Route exact path="/Login" component={ Login } />
+            <Route exact path="/" component={ Landing } />
+          </div>
+          <div className="text-editor-body">
+            <Route exact path="/TextEditor" component={ TextEditor } />
+          </div>
         </div>
       </Router>
     )

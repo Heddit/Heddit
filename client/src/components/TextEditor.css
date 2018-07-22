@@ -1,10 +1,13 @@
 .text-editor-body{
     background-color: #2d2d2d;
-    color: grey;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100%;
 }
 
 .text-editor-container{
-    margin: 2% auto;
+    margin: 1% ;
   }
 
 .tabs{
@@ -13,20 +16,65 @@
 
 .skin-selector{
     margin: auto;
-    padding: 1%;
+    padding: .1%;
+    width:7%;
 }
 
 .logo{
     width: 50%;
     height: 100%;
-    margin: -50% 0 0 0;
+    margin: -20% 0 0 50%;
+    padding: 5% 0;
+    
 }
 
 .tab-style{
     width: 20%;
 }
 
-.side-nav{
+.side-menu{
     background-color: #2d2d2d;
-    height: 100%;
+    width: 12%;
+    padding-right: 0;
+    padding-top: 10px;
+    background-color: #494949;
+    height: 780px;
 }
+
+.side-nav{
+    width: 5%;
+    background-color:#333333;
+    padding-top: 10px;
+    height: 742px;
+}
+
+.dropdown-btn{
+    background: transparent;
+    border: none;
+}
+
+#dropdown-no-caret{    
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.dropdown-menu{
+    background-color: #8080804d;
+}
+
+.tabs-holder{
+    width: 74.6%;
+    padding: 0;
+}
+
+.tab-data{
+    background-color: #1e1e1e;
+    width: 1186px;
+    height: 725px;
+}
+
+.nav-tabs{
+    background-color: #2d2d2d;
+}
+
