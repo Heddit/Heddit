@@ -38,7 +38,7 @@ class Login extends Component {
                     <FormControl type="password" placeholder="Password" />
                     </Row>
                 </FormGroup>
-                <Button type="submit">Login</Button>
+                <Button type="submit" href="/TextEditor">Login</Button>
                 <Button type="post" bsStyle='success'>Sign Up</Button>
                 </Form>
                 </div>    
