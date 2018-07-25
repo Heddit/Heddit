@@ -1,4 +1,3 @@
-
 //dependencies
 const express = require('express'),
       PORT = process.env.PORT || 3000
