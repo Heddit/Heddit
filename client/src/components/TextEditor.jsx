@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Col} from 'react-bootstrap'
-import ScrapeTabs from './ScrapeTabs'
+import Tabs from './ScrapeTabs'
 import Navbar from './Navbar'
 import SideNav from './Sidenav'
 import Sidemenu from './Sidemenu'
@@ -26,16 +26,15 @@ class TextEditor extends Component {
                         </Col>
                     </div>
                     <div>
-                    <Col className="tabs-holder" sm={3} md={8}>
-                        <ScrapeTabs />
-                    </Col>
-                    <span className='side-nav'>
-                    <Col xs={1} sm={1} className="skin-selector dropdown-menu-style">
-                        <Navbar />
-                    </Col>
-                    </span>
-                    </div>
-                     
+                        <Col className="tabs-holder" sm={3} md={8}>
+                            <Tabs />
+                        </Col>
+                        <span className='side-nav'>
+                            <Col xs={1} sm={1} className="skin-selector dropdown-menu-style">
+                                <Navbar />
+                            </Col>
+                        </span>
+                    </div> 
                 </div>
             </body>
             

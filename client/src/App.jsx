@@ -20,10 +20,10 @@ class App extends Component {
             <Route exact path="/Login" component={ Login } />
             <Route exact path="/" component={ Landing } />
             <Route exact path="/Terminal" component={ Terminal } />
-            <Route exact path="/Sublime" component={ Sublime } />
           </div>
           <div className="text-editor-body">
             <Route exact path="/TextEditor" component={ TextEditor } />
+            <Route exact path="/Sublime" component={ Sublime } />
           </div>
         </div>
       </Router>

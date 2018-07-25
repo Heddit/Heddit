@@ -10,9 +10,6 @@
     margin: 1% ;
   }
 
-.tabs{
-    width: 150%;
-}
 
 .skin-selector{
     margin: auto;
@@ -28,9 +25,7 @@
     
 }
 
-.tab-style{
-    width: 20%;
-}
+
 
 .side-menu{
     background-color: #2d2d2d;
@@ -67,17 +62,6 @@
     width: 74.6%;
     padding: 0;
 }
-
-.tab-data{
-    background-color: #1e1e1e;
-    width: 1186px;
-    height: 725px;
-}
-
-.nav-tabs{
-    background-color: #2d2d2d;
-}
-
 
 .test{
     color: white;

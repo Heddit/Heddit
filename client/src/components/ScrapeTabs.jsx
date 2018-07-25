@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {Col, Tabs, Tab} from 'react-bootstrap'
+import {Tabs, Tab} from 'react-bootstrap'
+import './ScrapeTabs.css'
 
 
 
@@ -23,20 +24,20 @@ class ScrapeTabs extends Component {
     render() {
         return (
             <div>
-                <Tabs defaultActiveKey={2} id="tabs">
-                <Tab eventKey={7} title={this.setState.tab1} className="tab-style">
-                    <div className="tab-data">Tab 1 content</div>
-                </Tab>
-                <Tab eventKey={8} title={this.setState.tab2} className="tab-style">
-                    <div className="tab-data">Tab 2 content</div>
-                </Tab>
-                <Tab eventKey={9} title={this.setState.tab3} className="tab-style">
-                    <p className="tab-data">Tab 3 content</p>
-                </Tab>
+                <Tabs defaultActiveKey={1} id="tabs">
+                    <Tab eventKey={1} title="Tab 1" className="tab-style">
+                        <div className="tab-data">Tab 1 content</div>
+                    </Tab>
+                    <Tab eventKey={2} title="Tab 2" className="tab-style">
+                        <div className="tab-data">Tab 2 content</div>
+                    </Tab>
+                    <Tab eventKey={3} title="Tab 3" className="tab-style">
+                        <p className="tab-data">Tab 3 content</p>
+                    </Tab>
                 </Tabs>
             </div>
         )
     }
 }
 
-export default Tabs;
+export default ScrapeTabs;

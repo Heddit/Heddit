@@ -1,0 +1,18 @@
+.sublime-side-menu{
+    background-color: #2d2d2d;
+    width: 15%;
+    padding-right: 0;
+    padding-top: 10px;
+    background-color: #d1d0d0;
+    color: black;
+    height: 900px;
+}
+
+.sublime-tabs-holder{
+    width: 77.5%;
+    padding: 0;
+}
+
+.sublime-body{
+    background-color: rgb(37, 44, 37);
+}
