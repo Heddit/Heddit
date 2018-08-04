@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+img{
+  width: 100%;
+}
+input{
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #CCC;
+  width: 33%
+}
+button{
+  padding: 10px;
+}
+a:hover{
+  cursor: pointer;
+}
+#status{
+  color: #ccc;
+  font-size: 1em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 8vh
+}
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+  grid-column-gap: 40px;
+  margin: auto;
+  margin-top: 10vh;
+}
+.header > div{
+  width: 200px;
+  margin: auto;
+}
+.hide{
+  display: none;
+}
+
+.fa-scissors{
+  margin-right: 20px;
+}
+.delete-button{
+  margin-left: 20px;
+}
+.status-red{
+  color: #fe654f;
+  font-size: 2em;
+  vertical-align: middle;
+}
+.status-green{
+  color: green;
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+#create-user-form{
+  margin-top: 30px;
+}
+
+#sign-in-form{
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.log-out{
+  margin: 5% 0;
+}
