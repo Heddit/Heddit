@@ -1,0 +1,42 @@
+
+.login-form {
+    width: 340px;
+    margin: 50px auto
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.712);
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.eye-logo{
+    width: 100%;
+}
+
+
+.form-horizontal{
+    margin: 0;
+}
+
+.form-control{
+    width: 75%;
+    margin: auto;
+}
+
+.login-body{
+    background-image: url('../images/binary.jpg');
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: black;
+}

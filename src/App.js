@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
-import './App.css';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Landing from './components/Landing'
+import SignIn from './components/SignIn'
+import TextEditor from './components/TextEditor'
+import Terminal from './components/Terminal'
+import Sublime from './components/Sublime'
+import './App.css'
 
 class App extends Component {
 
 
   render() {
     return (
-      <div className="App">
-        
-      </div>
+          <Router>
+            <div>
+              <div className="main-body">
+                <Route exact path="/SignIn" component={ SignIn } />
+                <Route exact path="/" component={ Landing } />
+                <Route exact path="/Terminal" component={ Terminal } />
+                <Route exact path="/TextEditor" component={ TextEditor } />
+                <Route exact path="/Sublime" component={ Sublime } />
+              </div>
+              <div className="text-editor-body">
+                <Route exact path="/TextEditor" component={ TextEditor } />
+              </div>
+            </div>
+        </Router>
     );
   }
 }

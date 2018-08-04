@@ -1,33 +1,23 @@
 import React, { Component } from 'react'
-import {Modal} from 'react-bootstrap'
+import {Card} from 'semantic-ui-react'
 import Logo from '../images/heddit.png'
 import Background from '../images/background.mp4'
 import "./Landing.css"
 
 class Landing extends Component {
-  constructor(){
-    super()
-    this.state = {
-      logoImage: Logo,
-      videoURL: Background
-    }
-  }
+
     render() {
         return (
             <body className='landing-body-page'>
-                <div>
+                <div className='landing-bg'>
                 <video id="background-video" loop autoPlay muted>
-                    <source src={this.state.videoURL} type="video/mp4" />
-                    <source src={this.state.videoURL} type="video/ogg" />
+                    <source src={Background} type="video/mp4" />
+                    <source src={Background} type="video/ogg" />
                     Your browser does not support the video tag.
                 </video>
-                    <div className="static-modal">
-                        <Modal.Dialog bsStyle='small'>
-                                <a href='/Login'> 
-                                    <img className='landing-logo' src={this.state.logoImage} alt='Hiddit Logo'/>
-                                </a>
-                        </Modal.Dialog>
-                    </div>
+                <a href='/Login'>
+                    <img className='landing-logo' src={Logo} alt='Heddit Logo'/>
+                </a>
                 </div>
             </body>
         );

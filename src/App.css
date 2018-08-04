@@ -94,3 +94,12 @@ a:hover{
 .log-out{
   margin: 5% 0;
 }
+
+.main-body {
+  text-align: center;
+}
+
+
+a{
+  color: white;
+}

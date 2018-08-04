@@ -1,11 +1,8 @@
-
-.landing-body-page{
-    background-color: black;
-}
-
 .landing-logo{
-    width: 120%;
-    padding: 10% 15% 0 0 ;
+    width: 20%;
+    padding: 10% auto;
+    margin: 10% auto;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .background-video{
@@ -13,13 +10,19 @@
     width: 200%;
 }
 
-.modal-content{
-    height: 100%;
-    width: 50%;
-    margin: 50px auto;
-    background-color: rgba(0, 0, 0, 0.383);
-}
 
 .landing-body-page{
-    background-color: black;
+    background-color: transparent;
+}
+
+#background-video {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden
 }
