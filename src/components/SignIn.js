@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Dashboard from './Dashboard';
 import {databaseBase,firebase} from '../base'
 import {Grid} from 'semantic-ui-react'
+import Logo from '../images/heddit.png'
+import './Login.css'
 
 class SignIn extends Component {
 
@@ -116,43 +118,40 @@ class SignIn extends Component {
 
     render() {
         return (
-            <div>
-                   <div className="dashed-container">
+            <div className='login-body'>
+            <div className="login-form">
+            <a href='/'>
+                    <img className='eye-logo' src={Logo} alt='Heddit Logo'/>
+                </a>
+              {this.state.authenticated === false &&
+                <div>
+                  <form id="create-user-form" onSubmit={this.createUser}>
+                  <div>
+                    <input value={this.state.value} onChange={this.handleCreateUserEmailChange} type="email" placeholder="Email" required></input>
+                  </div>  
+                  <div>
+                    <input value={this.state.value} onChange={this.handleCreateUserPasswordChange} type="password" placeholder="Password" required></input>
+                  </div>  
+                  <div>
+                    <button id="sign-up-button" className='ui button'  type="submit">Sign Up</button>
+                  </div>
+                  </form>
 
-
-
-{this.state.authenticated === false &&
-  <div>
-    <form id="create-user-form" onSubmit={this.createUser}>
-    <div>
-      <input value={this.state.value} onChange={this.handleCreateUserEmailChange} type="email" placeholder="Email" required></input>
-    </div>  
-    <div>
-      <input value={this.state.value} onChange={this.handleCreateUserPasswordChange} type="password" placeholder="Password" required></input>
-    </div>  
-    <div>
-      <button id="sign-up-button" className='ui button'  type="submit">Sign Up</button>
-    </div>
-    </form>
-
-    <form id="sign-in-form" onSubmit={this.signIn}>
-      <div>
-        <input value={this.state.value} onChange={this.handleLoginEmailChange} type="email" placeholder="Email" required></input>
-      </div>
-      <div>
-      <input value={this.state.value} onChange={this.handleLoginPasswordChange} type="password" placeholder="Password" required></input>
-      </div>
-      <div>
-      <button id="signIn-button" className='ui button' type="submit">Log In</button>
-      </div>
-    </form>
-
-    <p id="errors">{this.state.error}</p>
-
-  </div>
-}
-
-</div>
+                  <form id="sign-in-form" onSubmit={this.signIn}>
+                    <div>
+                      <input value={this.state.value} onChange={this.handleLoginEmailChange} type="email" placeholder="Email" required></input>
+                    </div>
+                    <div>
+                    <input value={this.state.value} onChange={this.handleLoginPasswordChange} type="password" placeholder="Password" required></input>
+                    </div>
+                    <div>
+                    <button id="signIn-button" className='ui button' type="submit">Log In</button>
+                    </div>
+                  </form>
+                  <p id="errors">{this.state.error}</p>
+                </div>
+              }
+              </div>
 
 {/* Errors  */}
 {
@@ -162,7 +161,7 @@ class SignIn extends Component {
 }
 
 {this.state.authenticated === true &&
-  <div className='app-container'>
+  <div className=''>
     <Dashboard
       uid={this.state.uid}
       items={this.state.items}

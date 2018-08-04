@@ -1,0 +1,28 @@
+
+.tab-data{
+    background-color: transparent;
+    width: 900px;
+    height: 725px;
+    margin: 10% 20%;
+}
+
+.nav-tabs{
+    background-color: #2d2d2d;
+}
+
+
+.sublime-nav-tabs{
+    background-color: #8a8888;
+}
+.tab-style{
+    width: 20%;
+}
+
+.tabs{
+    width: 150%;
+}
+
+.tabs-holder{
+    width: 74.6%;
+    padding: 0;
+}
