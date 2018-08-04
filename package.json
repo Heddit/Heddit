@@ -10,7 +10,8 @@
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
-    "request": "^2.87.0"
+    "request": "^2.87.0",
+    "semantic-ui-react": "^0.82.1"
   },
   "scripts": {
     "start": "react-scripts start",
