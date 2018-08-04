@@ -1,0 +1,25 @@
+
+.landing-body-page{
+    background-color: black;
+}
+
+.landing-logo{
+    width: 120%;
+    padding: 10% 15% 0 0 ;
+}
+
+.background-video{
+    height: 100%;
+    width: 200%;
+}
+
+.modal-content{
+    height: 100%;
+    width: 50%;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.383);
+}
+
+.landing-body-page{
+    background-color: black;
+}
