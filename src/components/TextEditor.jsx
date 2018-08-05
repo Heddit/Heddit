@@ -3,6 +3,7 @@ import {Grid, GridColumn} from 'semantic-ui-react'
 import Tabs from './Tabs'
 import Navbar from './Navbar'
 import SideNav from './Sidenav'
+import Dropdown from './Dropdown'
 import Sidemenu from './Sidemenu'
 import './TextEditor.css'
 
@@ -27,8 +28,8 @@ class TextEditor extends Component {
                         </Grid.Column>
 
                         <GridColumn className='side-nav'>
-                            <div xs={1} sm={1} className="skin-selector dropdown-menu-style">
-                                <Navbar />
+                            <div className="skin-selector">
+                                <Dropdown />
                             </div>
                         </GridColumn>
                     </Grid>
