@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import {databaseBase,firebase} from '../base'
-import { Button } from 'semantic-ui-react'
+import {firebase} from '../base'
 import BleacherReport from './BleacherReport'
 import Reddit from './Reddit'
 import NYT from './NYT'
@@ -16,7 +15,8 @@ class Tabs extends Component {
           showBleacherReport: false,
           showReddit: false,
           showNYT: false,
-          authenticated: false
+          authenticated: false,
+          active: false
         }
       }
       
@@ -26,21 +26,24 @@ class Tabs extends Component {
         this.setState({
           showBleacherReport: true,
           showReddit: false,
-          showNYT: false
+          showNYT: false,
+          active: true
         })
       )
       showReddit = () =>(
         this.setState({
           showBleacherReport: false,
           showReddit: true,
-          showNYT: false
+          showNYT: false,
+          active: true
         })
       )
       showNYT = () =>(
         this.setState({
           showBleacherReport: false,
           showReddit: false,
-          showNYT: true
+          showNYT: true,
+          active: true
         })
       )
 
@@ -48,14 +51,20 @@ class Tabs extends Component {
         firebase.auth().signOut()
       }
 
+      toggleClass() {
+        const currentState = this.state.active;
+        this.setState({ active: !currentState });
+        console.log(currentState)
+    };
+
     render() {
         return (
             <div className='tab-container'>
                 {/* Tabs */}
                
-                  <Button className='ui button' onClick={this.showBleacherReport}>Bleacher Report</Button>
-                  <Button className='ui button' onClick={this.showReddit}>Reddit</Button>
-                  <Button className='ui button' onClick={this.showNYT}>New York Times</Button>
+                  <button className={this.state.active ? 'tab-button' : null} onClick={this.showBleacherReport + this.toggleClass}>Bleacher Report</button>
+                  <button className='tab-button' onClick={this.showReddit}>Reddit</button>
+                  <button className='tab-button' onClick={this.showNYT}>New York Times</button>
                 
 
 

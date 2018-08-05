@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
-import { Button, Form } from 'semantic-ui-react'
-import Background from '../images/binaryRain.mp4'
-import Logo from '../images/heddit.png'
+import { Form, Transition, Button } from 'semantic-ui-react'
 import {firebase} from '../base'
 import './Login.css'
 
 
 
 class LoginPage extends Component {
+
+    
     constructor(){
         super()
         this.state = {
           authenticated: false,
+          hide: 500, 
+          show: 500, 
+          visible: false
         }
+    
         
       }
       handleLoginEmailChange = (event) => {
@@ -61,36 +65,39 @@ class LoginPage extends Component {
           }
         })
       }
-    render() {
-        return (
-            <div className='login-body'> 
-               <div className='landing-bg'>
-                    <video id="background-video" loop autoPlay muted>
-                        <source src={Background} type="video/mp4" />
-                        <source src={Background} type="video/ogg" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <div className="login-form">
-                        <Form horizontal>
-                            <a href='/'>
-                                <img className='eye-logo-small' src={Logo} alt='Heddit Logo'/>
-                            </a>
 
-                        <Form id="sign-in-form" onSubmit={this.signIn}>
-                            <Form.Field>
-                                <input value={this.state.value} onChange={this.handleLoginEmailChange} type="email" placeholder="Email" required></input>
-                            </Form.Field>
-                            <Form.Field>
-                                <input value={this.state.value} onChange={this.handleLoginPasswordChange} type="password" placeholder="Password" required></input>
-                            </Form.Field>
-                            <div>
-                                <Button id="signIn-button" inverted color='green' type="submit">Log In</Button>
-                            </div>
-                        </Form>
-                    <p id="errors">{this.state.error}</p>
+      state = { }
+      handleChange = (e, { name, value }) => this.setState({ [name]: value })
+      toggleVisibility = () => this.setState({ visible: !this.state.visible })
+      
+    render() {
+
+        const { hide, show, visible } = this.state
+
+        return (
+            <div> 
+                <Button inverted color='green' content='Login' onClick={this.toggleVisibility} />
                 
-                        </Form>
-                    </div>   
+                <Transition duration={{ hide, show }} visible={visible}>
+                    <Transition.Group>
+                    <Form horizontal>
+
+                    <Form id="sign-in-form" onSubmit={this.signIn}>
+                        <Form.Field>
+                            <input value={this.state.value} onChange={this.handleLoginEmailChange} type="email" placeholder="Email" required></input>
+                        </Form.Field>
+                        <Form.Field>
+                            <input value={this.state.value} onChange={this.handleLoginPasswordChange} type="password" placeholder="Password" required></input>
+                        </Form.Field>
+                        <div>
+                            <Button id="signIn-button" inverted color='green' type="submit">Log In</Button>
+                        </div>
+                    </Form>
+                        <p id="errors">{this.state.error}</p>
+                    </Form>
+                    </Transition.Group>
+                    </Transition>
+       
                 
                     {/* Errors  */}
                     {
@@ -119,7 +126,6 @@ class LoginPage extends Component {
                             </div>  
                         </div>
                     }
-                </div>
             </div>
         );
     }

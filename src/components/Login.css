@@ -43,3 +43,16 @@
     margin: auto;
     background-color: black;
 }
+
+.rowC, .sign-up-form{
+    display:flex; 
+    flex-direction:row;
+}
+
+.button-holder{
+    margin: 10% 22%;
+}
+
+.login-div{
+    margin-top: 100%;
+}
