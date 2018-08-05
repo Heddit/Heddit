@@ -1,3 +1,4 @@
+/* Text Editor Colors */
 .p{
     color: rgb(231, 129, 231);
 }
@@ -35,8 +36,5 @@
     letter-spacing: 0.05em;
 }
 
-.ui header{
-    color: white;
-    margin-top: 0;
-}
+
     
