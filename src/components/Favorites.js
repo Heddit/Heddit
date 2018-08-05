@@ -1,14 +1,10 @@
 import React from 'react'
-import { Popup, Item, Header  } from 'semantic-ui-react'
+import { Popup, Item  } from 'semantic-ui-react'
 import './TextColors.css'
-
-
-let addToFavesText = "<a href='#' className='w' (  <span className='r'> Add To Favorites </span>) </a>"
-
 
 const addToFavorites = () => (
         <div>
-            <span className='lb'>
+            <span className='r'>
                 <Popup
                     trigger={<Item  content='{ Add To Favorites } ' />}
                     content={<Item  content='Added To Favorites' />}
@@ -16,9 +12,6 @@ const addToFavorites = () => (
                 />
             </span>
         </div>
-
-
 )
-
 
 export default addToFavorites;

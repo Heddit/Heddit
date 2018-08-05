@@ -10,9 +10,9 @@ const trigger = (
 )
 
 const options = [
-    {  key: 'vscode', text: <a href='/TextEditor'> VSCode </a> },
-    {  key: 'sublime', text: <a href='/Sublime'> Sublime </a>  },
-    {  key: 'terminal', text: <a href='Terminal'> Terminal </a> },
+    {  key: 'vscode'  , text: <a href='/TextEditor'> VSCode   </a> },
+    {  key: 'sublime' , text: <a href='/Sublime'>    Sublime  </a> },
+    {  key: 'terminal', text: <a href='Terminal'>    Terminal </a> },
 ]
 
 const DropdownImageTriggerExample = () => (
