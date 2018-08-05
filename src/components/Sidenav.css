@@ -7,10 +7,12 @@ body{
 }
 
 .sidenav-container{
-    margin: 5%;
+    margin: 10%;
+    padding: 40%;
+    text-align: center;
 }
 
 .icon{
-    padding: 3%;
-    margin-top: 0;
+    padding: 10%;
+    margin: 50%;
 }

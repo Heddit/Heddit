@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import './Tabs.css'
-import BleacherReport from './BleacherReport'
 import {databaseBase,firebase} from '../base'
+import { Button } from 'semantic-ui-react'
+import BleacherReport from './BleacherReport'
 import Reddit from './Reddit'
 import NYT from './NYT'
+import './Tabs.css'
 
 
 class Tabs extends Component {
@@ -51,9 +52,11 @@ class Tabs extends Component {
         return (
             <div className='tab-container'>
                 {/* Tabs */}
-                <button className='ui button' onClick={this.showBleacherReport}>Bleacher Report</button>
-                <button className='ui button' onClick={this.showReddit}>Reddit</button>
-                <button className='ui button' onClick={this.showNYT}>New York Times</button>
+               
+                  <Button className='ui button' onClick={this.showBleacherReport}>Bleacher Report</Button>
+                  <Button className='ui button' onClick={this.showReddit}>Reddit</Button>
+                  <Button className='ui button' onClick={this.showNYT}>New York Times</Button>
+                
 
 
                 {/* Tab Content */}
