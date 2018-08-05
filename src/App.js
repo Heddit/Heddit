@@ -24,7 +24,6 @@ class App extends Component {
                 <Route exact path="/SignUp" component={ SignUp } /> 
                 <Route exact path="/Dashboard" component={ Dashboard } /> 
                 <Route exact path="/Terminal" component={ Terminal } />
-                <Route exact path="/TextEditor" component={ TextEditor } />
                 <Route exact path="/Sublime" component={ Sublime } />
               </div>
               <div className="text-editor-body">

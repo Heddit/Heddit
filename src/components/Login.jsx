@@ -1,33 +1,43 @@
 import React, { Component } from 'react'
-import { Form } from 'react-bootstrap'
-import { Button } from 'semantic-ui-react'
+import { Form, Grid} from 'semantic-ui-react'
 import Background from '../images/binaryRain.mp4'
 import Logo from '../images/heddit.png'
+import LoginPage from './LoginPage'
+import Signup from './SignUp'
 import './Login.css'
 
 
 
 class Login extends Component {
 
-
+  
     render() {
+   
         return (
             <div className='login-body'> 
-               <div className='landing-bg'>
-                <video id="background-video" loop autoPlay muted>
-                    <source src={Background} type="video/mp4" />
-                    <source src={Background} type="video/ogg" />
-                    Your browser does not support the video tag.
-                </video>
+            <div className='landing-bg'>
+             <video id="background-video" loop autoPlay muted>
+                 <source src={Background} type="video/mp4" />
+                 <source src={Background} type="video/ogg" />
+                 Your browser does not support the video tag.
+             </video>
+             <Grid className='login-div'>
                 <div className="login-form">
                     <Form horizontal>
-                        <a href='/'>
-                            <img className='eye-logo' src={Logo} alt='Heddit Logo'/>
-                        </a>
-                        <Button inverted color='green' href='/LoginPage'>Login</Button>
-                        <Button inverted color='white' href='/SignUp'>Sign Up</Button>
-                    </Form>
-                </div>  
+                        <div>
+                            <a href='/'>
+                                <img className='eye-logo-small' src={Logo} alt='Heddit Logo'/>
+                            </a>
+                        </div>
+                    <div className='button-holder'>
+                    <div className='rowC'>
+                        <LoginPage />   
+                            <Signup />
+                        </div>
+                        </div> 
+                        </Form>
+                    </div>
+                    </Grid> 
                 </div>  
             </div>
         );

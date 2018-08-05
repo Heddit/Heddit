@@ -1,3 +1,19 @@
 .tab-container{
     margin: 2% 0;
+    float: left;
+}
+
+.tab-button{
+    background-color: rgb(63, 62, 62);
+    border: none;
+    margin: 1px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+button{
+    border:none;
+}
+
+.tab-button-clicked{
+    background-color: rgb(34, 33, 33);
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Col} from 'react-bootstrap'
+import {Grid, GridColumn} from 'semantic-ui-react'
 import Tabs from './Tabs'
 import Navbar from './Navbar'
 import SideNav from './Sidenav'
@@ -13,29 +13,26 @@ class TextEditor extends Component {
         return (
             <div className="text-editor-body">
                 <div className='text-editor-container'>
-                    <div>
-                        <Col active className='side-nav' sm={1} md={1}>
+                    <Grid>
+                        <Grid.Column className='side-nav'>
                             <SideNav />
-                        </Col>
-                    </div>
-                    <div>
-                        <Col active className='side-menu' sm={5} md={1}>
+                        </Grid.Column>
+                  
+                        <Grid.Column active className='side-menu' sm={5} md={1}>
                             <Sidemenu />
-                        </Col>
-                    </div>
-                    <div>
-                    <Col className="tabs-holder" sm={3} md={8}>
-                        <Tabs />
-                    </Col>
-                    <span className='side-nav'>
-                        <Col xs={1} sm={1} className="skin-selector dropdown-menu-style">
-                            <Navbar />
-                        </Col>
-                    </span>
-                    </div>
+                        </Grid.Column>
                     
-            </div>
+                        <Grid.Column width={8} >
+                            <Tabs />
+                        </Grid.Column>
 
+                        <GridColumn className='side-nav'>
+                            <div xs={1} sm={1} className="skin-selector dropdown-menu-style">
+                                <Navbar />
+                            </div>
+                        </GridColumn>
+                    </Grid>
+                </div>
             </div>
 
         
