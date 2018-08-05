@@ -21,6 +21,7 @@ export default class Dashboard extends React.Component{
           <Tabs />
         </Grid.Column>
         </Grid>
+        
 
       </div>
     )
