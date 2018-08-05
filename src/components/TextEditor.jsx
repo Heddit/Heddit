@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {Grid, GridColumn} from 'semantic-ui-react'
 import Tabs from './Tabs'
-import Navbar from './Navbar'
 import SideNav from './Sidenav'
 import Dropdown from './Dropdown'
 import Sidemenu from './Sidemenu'

@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import NYTData from './NYTLayout'
 
 class NYT extends Component {
     render() {
         return (
             <div>
-                <h1>New York Times</h1>
+                <NYTData />
             </div>
         );
     }
