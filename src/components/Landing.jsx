@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {Card} from 'semantic-ui-react'
 import Logo from '../images/heddit.png'
 import Background from '../images/background.mp4'
 import "./Landing.css"
