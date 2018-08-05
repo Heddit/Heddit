@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import RedditData from './RedditLayout'
 
 class Reddit extends Component {
     render() {
         return (
             <div>
-                <h1>Reddit</h1>
+                <RedditData />
             </div>
         );
     }

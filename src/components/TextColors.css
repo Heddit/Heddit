@@ -1,0 +1,42 @@
+.p{
+    color: rgb(231, 129, 231);
+}
+
+.o{
+    color: rgb(253, 123, 48);
+}
+
+.y{
+    color: rgb(247, 247, 115);
+}
+
+.b{
+    color: rgb(154, 154, 251);
+}
+
+.lb{
+    color: rgb(228, 228, 252);
+}
+
+.g{
+    color: rgb(87, 246, 172);
+}
+
+.w{
+    color: rgb(230, 230, 230);
+}
+
+.r{
+    color: rgb(245, 138, 138);
+}
+
+.vscode-article-holder{
+    margin: 2%;
+    letter-spacing: 0.05em;
+}
+
+.ui header{
+    color: white;
+    margin-top: 0;
+}
+    

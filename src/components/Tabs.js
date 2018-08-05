@@ -15,8 +15,6 @@ class Tabs extends Component {
           showBleacherReport: false,
           showReddit: false,
           showNYT: false,
-          authenticated: false,
-          active: false
         }
       }
       
@@ -27,7 +25,6 @@ class Tabs extends Component {
           showBleacherReport: true,
           showReddit: false,
           showNYT: false,
-          active: true
         })
       )
       showReddit = () =>(
@@ -35,7 +32,6 @@ class Tabs extends Component {
           showBleacherReport: false,
           showReddit: true,
           showNYT: false,
-          active: true
         })
       )
       showNYT = () =>(
@@ -43,7 +39,6 @@ class Tabs extends Component {
           showBleacherReport: false,
           showReddit: false,
           showNYT: true,
-          active: true
         })
       )
 
@@ -51,18 +46,13 @@ class Tabs extends Component {
         firebase.auth().signOut()
       }
 
-      toggleClass() {
-        const currentState = this.state.active;
-        this.setState({ active: !currentState });
-        console.log(currentState)
-    };
 
     render() {
         return (
             <div className='tab-container'>
                 {/* Tabs */}
                
-                  <button className={this.state.active ? 'tab-button' : null} onClick={this.showBleacherReport + this.toggleClass}>Bleacher Report</button>
+                  <button className='tab-button' onClick={this.showBleacherReport}>Bleacher Report</button>
                   <button className='tab-button' onClick={this.showReddit}>Reddit</button>
                   <button className='tab-button' onClick={this.showNYT}>New York Times</button>
                 
@@ -72,7 +62,6 @@ class Tabs extends Component {
                 {this.state.showBleacherReport === true &&  
                 <div>
                     <BleacherReport />
-                    <button type="button" onClick={this.scrapeBleacherReport}>Scrape Bleacher</button>
                 </div>
                 }
                 {this.state.showReddit === true &&  
