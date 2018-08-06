@@ -1,6 +1,8 @@
 .terminal-body{
     color: lime;
     background-color: black;
+    text-align: left;
+    height: 900px;
 }
 
 .logo{

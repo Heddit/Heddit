@@ -12,7 +12,7 @@
 }
 
 .b{
-    color: rgb(154, 154, 251);
+    color: rgb(130, 130, 252);
 }
 
 .lb{
@@ -38,3 +38,10 @@
 
 
     
+.lime-green{
+    color: lime;
+}
+
+.align-right{
+    text-align: right;
+}

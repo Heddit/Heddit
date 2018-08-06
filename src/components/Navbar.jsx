@@ -1,29 +1,28 @@
 import React, { Component } from 'react'
-import { DropdownButton, MenuItem} from 'react-bootstrap'
-import Logo from '../images/eye.png'
+import { Icon }  from 'semantic-ui-react'
+import Dropdown from './DropdownSmall'
+import DropdownRed from './DropdownRed'
+import DropdownYellow from './DropdownYellow'
 import './Navbar.css'
 
 
 class Navbar extends Component {
     render() {
         return (
-            <div>
-                <span className="dropdown-menu-style">
-                    <DropdownButton
-                    bsStyle="default"
-                    title={<img src={Logo} alt='logo' className='logo'/>}
-                    className="dropdown-btn"
-                    noCaret
-                    bsSize="xsmall"                        
-                    id="dropdown-no-caret">
-                        <MenuItem className="menu-item" eventKey={4} href="/TextEditor">VSCode </MenuItem>
-                        <MenuItem className="menu-item" eventKey={5} href="/Sublime">Sublime</MenuItem>
-                        <MenuItem className="menu-item" eventKey={6} href="/Terminal">Terminal</MenuItem>
-                    </DropdownButton>
+            <div className='navbar'>
+                <span className='navbar-title'> 
+                    <DropdownRed />
+                    <DropdownYellow />
+                    <Dropdown /> 
+                    Terminal 
+
+ 
                 </span>
             </div>
-        )
+        );
     }
 }
 
 export default Navbar;
+
+

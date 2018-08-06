@@ -1,7 +1,30 @@
-.dropdown-menu a:active{
-    color: white;
+.navbar{
+    padding-left: 5px;
+    background-color: rgb(211, 211, 211);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-bottom: 2%;
+    height: 25px;
+    width: 100%;
 }
 
-.dropdown-menu a:visited{
-    color: white;
+.navbar-title{
+    color: black;
 }
+
+.red{
+    color: red;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.green{
+    color:rgb(0, 207, 0);
+}
+
+.circle{
+    font-size: 22px;
+}
+
