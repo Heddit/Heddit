@@ -6,17 +6,17 @@
     margin-right: 2%;
     background-color: #d1d0d0;
     color: black;
-    height: 900px;
+    height: 1000px;
 }
 
 .sublime-tabs-holder{
     width: 75%;
     padding: 0;
+    text-align: left;
 }
 
 .sublime-body{
-    background-color: rgb(41, 41, 41);
-    margin-top: 1%;
+    background-color: rgb(36, 36, 36);
 }
 
 
@@ -26,4 +26,16 @@
 
 img, .logo, #dropdown{
     background-color: transparent;
+}
+
+.sublime-menu{
+    padding-top: 5%;
+}
+
+.tab-container{
+    float: left;
+}
+
+.left{
+    text-align: left;
 }
