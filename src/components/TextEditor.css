@@ -1,5 +1,5 @@
 .text-editor-body{
-    background-color: #2d2d2d;
+    background-color: #212121;
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -33,20 +33,18 @@
 }
 
 .side-menu{
-    background-color: #2d2d2d;
-    width: 12%;
-    padding-right: 0;
-    padding-top: 10px;
-    background-color: #494949;
-    height: 780px;
+    background-color: #272727;
+    height: 900px;
 }
 
 .side-nav{
-    width: 5%;
-    background-color:#333333;
-    padding-top: 10px;
-    height: 742px;
+    background-color: #3d3d3d;
 }
+
+.bg-color{
+    background-color:  #212121;
+}
+
 
 .dropdown-btn{
     background: transparent;
@@ -77,4 +75,8 @@
 
 .test{
     color: white;
+}
+
+hr{
+    margin-top: 4%;
 }

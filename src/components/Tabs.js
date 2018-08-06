@@ -55,6 +55,7 @@ class Tabs extends Component {
                   <button className='tab-button' onClick={this.showBleacherReport}>Bleacher Report</button>
                   <button className='tab-button' onClick={this.showReddit}>Reddit</button>
                   <button className='tab-button' onClick={this.showNYT}>New York Times</button>
+                  
                 
 
 

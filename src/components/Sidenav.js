@@ -1,31 +1,49 @@
 import React, { Component } from 'react'
-import { Icon, Grid } from 'semantic-ui-react'
+import { Icon, Grid, Dropdown } from 'semantic-ui-react'
 import './Sidenav.css'
 
 class Sidenav extends Component {
+
+    
     render() {
+
+        const trigger = (
+            <span>
+              <Icon name='settings' size='big' className='icon' />
+            </span>
+          )
+          
+          const options = [
+              {  key: 'rn-tb', text: <a href='#'> Rename Tab </a> },
+              {  key: 'ad-tb', text: <a href='#'> Add Tab    </a> },
+              {  key: 'rm-tb', text: <a href='#'> Remove Tab </a> },
+          ]
+          
+          
         return (
          <div className='sidenav-container'>
                 <Grid>
-                    <Icon name='home' size='large' className='icon' />
-                </Grid>
-                <Grid>
-                    <Icon name='code' size='large' className='icon' />
-                </Grid>
-                <Grid>
-                    <Icon name='save outline' size='large' className='icon' />
-                </Grid>
-                <Grid>
-                    <Icon name='undo' size='large' className='icon' />
-                </Grid>
-                <Grid>
-                    <Icon name='edit' size='large' className='icon' />
-                </Grid>
-                <Grid>
-                    <Icon name='folder outline' size='large' className='icon' />
-                </Grid>
-                <Grid>
-                    <Icon name='folder outline' size='large' className='icon' />
+                    <Grid.Row>
+                    <Icon name='copy outline' size='big' className='icon' />
+                    </Grid.Row>
+                    <Grid.Row>
+                        <Icon name='search' size='big' className='icon' />
+                    </Grid.Row>
+                    <Grid.Row>
+                        <Icon name='save outline' size='big' className='icon' />
+                    </Grid.Row>
+                    <Grid.Row>
+                        <Icon name='undo' size='big' className='icon' />
+                    </Grid.Row>
+                    <Grid.Row>
+                        <Icon name='edit' size='big' className='icon' />
+                    </Grid.Row>
+                    <Grid.Row>
+                        <Icon name='content' size='big' className='icon' />
+                    </Grid.Row>
+                    <Grid.Row>
+                        <Dropdown trigger={trigger} options={options} position='bottom center' icon={null} />     
+                    </Grid.Row>
                 </Grid>
             </div>
         );

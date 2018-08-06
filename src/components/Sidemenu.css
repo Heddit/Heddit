@@ -1,3 +1,14 @@
-.black-bg{
-    background-color: black;
+
+.explorer-column{
+    color: white;
+    height: auto;
+    
+}
+
+.light-grey{
+    background-color: #3d3d3d;
+}
+
+.dark-grey{
+    background-color: #272727;
 }

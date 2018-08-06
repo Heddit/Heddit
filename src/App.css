@@ -1,5 +1,9 @@
+body, h5, h4, button{
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .App {
-  text-align: center;
+  text-align: center; 
 }
 
 .App-logo {
