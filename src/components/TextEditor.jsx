@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Grid, GridColumn, Divider} from 'semantic-ui-react'
+import { Grid, GridColumn } from 'semantic-ui-react'
 import Tabs from './Tabs'
 import SideNav from './Sidenav'
 import Dropdown from './Dropdown'

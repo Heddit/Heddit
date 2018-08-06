@@ -14,9 +14,9 @@ class Sidenav extends Component {
           )
           
           const options = [
-              {  key: 'rn-tb', text: <a href='#'> Rename Tab </a> },
-              {  key: 'ad-tb', text: <a href='#'> Add Tab    </a> },
-              {  key: 'rm-tb', text: <a href='#'> Remove Tab </a> },
+              {  key: 'rn-tb', text: <a href=''> Rename Tab </a> },
+              {  key: 'ad-tb', text: <a href=''> Add Tab    </a> },
+              {  key: 'rm-tb', text: <a href=''> Remove Tab </a> },
           ]
           
           

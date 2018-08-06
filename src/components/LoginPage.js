@@ -119,7 +119,7 @@ class LoginPage extends Component {
                                 {
                                     this.state.authenticated === true &&
                                     <div> 
-                                        <Button inverted color='red'>Logged In</Button>
+                                        <Button inverted color='red' href='/TextEditor'>Logged In</Button>
                                         <Button id="sign-out-button" inverted color='yellow' onClick={this.signOut}>Log Out</Button>
                                     </div>
                                 } */}
