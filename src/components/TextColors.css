@@ -45,3 +45,13 @@
 .align-right{
     text-align: right;
 }
+
+.pb{
+    padding-bottom: 2px;
+}
+
+.pt{
+    padding-top: 1.5%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.329);
+}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Icon }  from 'semantic-ui-react'
 import Dropdown from './DropdownSmall'
 import DropdownRed from './DropdownRed'
 import DropdownYellow from './DropdownYellow'
@@ -15,8 +14,6 @@ class Navbar extends Component {
                     <DropdownYellow />
                     <Dropdown /> 
                     Terminal 
-
- 
                 </span>
             </div>
         );

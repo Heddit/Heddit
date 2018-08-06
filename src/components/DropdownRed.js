@@ -12,7 +12,8 @@ const trigger = (
 const options = [
     {  key: 'vscode'  , text: <a href='/TextEditor'>Bleacher Report   </a> },
     {  key: 'sublime' , text: <a href='/Sublime'>   Reddit  </a> },
-    {  key: 'terminal', text: <a href='Terminal'>   New York Times  </a> }
+    {  key: 'terminal', text: <a href='Terminal'>   New York Times  </a> },
+    {  key: 'terminal', text: <a href='Terminal'>   Show Favorites  </a> }
 ]
 
 const DropdownImageTriggerExample = () => (

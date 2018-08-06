@@ -6,6 +6,8 @@
     padding-bottom: 2%;
     height: 25px;
     width: 100%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
 }
 
 .navbar-title{
