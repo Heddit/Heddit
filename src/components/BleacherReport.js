@@ -46,8 +46,8 @@ class BleacherReport extends Component {
             <div>
               { 
                 articles.map(
-                  (article) => {
-                    return <BleacherReportLayout title={article.title} img={article.img} link={article.link} summary={article.summary}  />
+                  (article, index) => {
+                    return <BleacherReportLayout key={index} title={article.title} img={article.img} link={article.link} summary={article.summary}  />
                   }
                 ) 
               }

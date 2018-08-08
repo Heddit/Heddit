@@ -23,7 +23,7 @@ class Login extends Component {
              </video>
              <Grid className='login-div'>
                 <div className="login-form">
-                    <Form horizontal>
+                    {/* <Form horizontal> */}
                         <div>
                             <a href='/'>
                                 <img className='eye-logo-small' src={Logo} alt='Heddit Logo'/>
@@ -35,7 +35,7 @@ class Login extends Component {
                             <Signup />
                         </div>
                         </div> 
-                        </Form>
+                        {/* </Form> */}
                     </div>
                     </Grid> 
                 </div>  

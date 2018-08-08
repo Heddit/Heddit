@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import RedditData from './RedditLayout'
+import RedditLayout from './RedditLayout'
 import cheerio from 'cheerio'
 import request from 'request'
 
@@ -22,7 +22,8 @@ class Reddit extends Component {
             
             $('p.title').each(function () {
                 
-                var title = $(this).title().text();
+                var title = $(this).text();
+                console.log("title", title)
 
                 // In the currently selected element, look at its child elements (i.e., its a-tags),
                 // then save the values for any "href" attributes that the child elements may have
@@ -33,6 +34,8 @@ class Reddit extends Component {
                     link: link,
                     summary: "We don't have one yet, la ta da tee-da, Loren Ipsum, Kitty Cat Poop Unicorn"
                 }
+
+                console.log("new Article:", newArticle)
     
                 redditArticles.push(newArticle);
             });
@@ -49,8 +52,8 @@ class Reddit extends Component {
             <div>
                  { 
                 articles.map(
-                  (article) => {
-                    return <RedditData title={article.title} link={article.link} summary={article.summary}  />
+                  (article, index) => {
+                    return <RedditLayout key={index} title={article.title} link={article.link} summary={article.summary}  />
                   }
                 ) 
               }
