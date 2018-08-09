@@ -7,8 +7,8 @@ body{
 }
 
 .sidenav-container{
-    margin: 10%;
-    padding: 40%;
+    margin-left: 48%;
+    /* padding-left: 5%; */
     text-align: center;
 }
 

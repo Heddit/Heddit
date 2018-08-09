@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { Form, Grid} from 'semantic-ui-react'
+import { Grid} from 'semantic-ui-react'
 import Background from '../images/binaryRain.mp4'
 import Logo from '../images/heddit.png'
 import LoginPage from './LoginPage'
-import Signup from './SignUp'
+// import Signup from './SignUp'
+// import magicLogin from './magicLogin'
 import './Login.css'
 
 
@@ -31,8 +32,10 @@ class Login extends Component {
                         </div>
                     <div className='button-holder'>
                     <div className='rowC'>
-                        <LoginPage />   
-                            <Signup />
+                        {/* <magicLogin /> */}
+                         <LoginPage />   
+                            {/* <Signup /> */}
+
                         </div>
                         </div> 
                         {/* </Form> */}

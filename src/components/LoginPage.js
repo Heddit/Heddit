@@ -76,10 +76,10 @@ class LoginPage extends Component {
 
         return (
             <div> 
-                <Button inverted color='green' content='Login' onClick={this.toggleVisibility} />
+                {/* <Button inverted color='green' content='Login' onClick={this.toggleVisibility} /> */}
                 
-                <Transition duration={{ hide, show }} visible={visible}>
-                    <Transition.Group>
+                {/* <Transition duration={{ hide, show }} visible={visible}> */}
+                    {/* <Transition.Group> */}
                     <Form horizontal>
 
                     <Form id="sign-in-form" onSubmit={this.signIn}>
@@ -90,24 +90,25 @@ class LoginPage extends Component {
                             <input value={this.state.value} onChange={this.handleLoginPasswordChange} type="password" placeholder="Password" required></input>
                         </Form.Field>
                         <div>
-                            <Button id="signIn-button" inverted color='green' type="submit">Log In</Button>
+                            <Button inverted color='green' href='/TextEditor'>Log In</Button>
+                            <Button inverted color='white' type="submit">Sign Up</Button>
                         </div>
                     </Form>
                         <p id="errors">{this.state.error}</p>
                     </Form>
-                    </Transition.Group>
-                    </Transition>
+                    {/* </Transition.Group> */}
+                    {/* </Transition> */}
        
                 
                     {/* Errors  */}
-                    {
+                    {/* {
                         (this.state.authenticated === false)
                         ? <div></div>
                         : <div></div>
-                    }
+                    } */}
                 
-                    {this.state.authenticated === true &&
-                        <div>
+                    {/* {this.state.authenticated === true &&
+                        <div> */}
                              {/* <Dashboard
                                 uid={this.state.uid}
                                 items={this.state.items}
@@ -115,18 +116,18 @@ class LoginPage extends Component {
                             />
                             
                             {/* Log Out Button */}
-                            <div className='log-out'>
+                            {/* <div className='log-out'>
                                 {
                                     this.state.authenticated === true &&
                                     <div> 
                                         <Button inverted color='red' href='/TextEditor'>Logged In</Button>
                                         <Button id="sign-out-button" inverted color='yellow' onClick={this.signOut}>Log Out</Button>
                                     </div>
-                                } */}
-                            </div>  
+                                } */} */}
+                            {/* </div>   */}
                         </div>
-                    }
-            </div>
+                    // }
+            // </div>
         );
     }
 }
