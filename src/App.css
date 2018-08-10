@@ -103,4 +103,10 @@ a:hover{
   text-align: center;
 }
 
+.tabs-div{
+  overflow: scroll;
+}
 
+.main-body{
+  overflow: scroll;
+}
