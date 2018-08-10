@@ -32,7 +32,7 @@ class Reddit extends Component {
                 var newArticle = {
                     title: title,
                     link: link,
-                    summary: "We don't have one yet, la ta da tee-da, Loren Ipsum, Kitty Cat Poop Unicorn"
+                    // summary: "We don't have one yet, la ta da tee-da, Loren Ipsum, Kitty Cat Poop Unicorn"
                 }
 
                 console.log("new Article:", newArticle)

@@ -32,7 +32,7 @@ class NYT extends Component {
                   title: title,
                   img: "placeholder",
                   link: link,
-                  summary: "We don't have one yet, la ta da tee-da, Loren Ipsum, Kitty Cat Poop Unicorn"
+                  // summary: "We don't have one yet, la ta da tee-da, Loren Ipsum, Kitty Cat Poop Unicorn"
               }
   
               NYTArticles.push(newArticle);
