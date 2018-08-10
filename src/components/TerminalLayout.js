@@ -36,7 +36,7 @@ class TerminalLayout extends Component {
                 title: title,
                 img: img,
                 link: link,
-                summary: "We don't have one yet, la ta da tee-da, Loren Ipsum, Kitty Cat Poop Unicorn"
+                // summary: "We don't h ave one yet, la ta da tee-da, Loren Ipsum, Kitty Cat Poop Unicorn"
             }
 
             bleacherReportArticles.push(newArticle);

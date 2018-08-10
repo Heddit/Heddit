@@ -24,22 +24,36 @@ class Sidenav extends Component {
          <div className='sidenav-container'>
                 <Grid>
                     <Grid.Row>
-                    <Icon name='copy outline' size='big' className='icon' />
+                    <a href='http://hackertyper.com/' target='_blank'>
+                        <Icon name='copy outline' size='big' className='icon' />
+                    </a>
                     </Grid.Row>
+                    
                     <Grid.Row>
-                        <Icon name='search' size='big' className='icon' />
+                        <a href='http://www.google.com/' target='_blank'>   
+                            <Icon name='search' size='big' className='icon' />
+                        </a>
                     </Grid.Row>
+                    
                     <Grid.Row>
+                    <a href='http://www.github.com/' target='_blank'>
                         <Icon name='save outline' size='big' className='icon' />
+                    </a>
                     </Grid.Row>
                     <Grid.Row>
+                    <a href='#'>
                         <Icon name='undo' size='big' className='icon' />
+                    </a>
                     </Grid.Row>
                     <Grid.Row>
+                    <a href='#'>
                         <Icon name='edit' size='big' className='icon' />
+                    </a>
                     </Grid.Row>
                     <Grid.Row>
+                    <a href='#'>
                         <Icon name='content' size='big' className='icon' />
+                    </a>
                     </Grid.Row>
                     <Grid.Row>
                         <Dropdown trigger={trigger} options={options} position='bottom center' icon={null} />     
